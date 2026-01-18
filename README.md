@@ -35,8 +35,8 @@ Bot ini mengotomasi workflow lengkap untuk migrasi produk:
 
 ```bash
 # Clone repository
-git clone [your-repo-url]
-cd bot-migrasi
+git clone https://github.com/DelpiTiwu/Automation-Migration.git
+cd Automation-Migration
 
 # Install dependencies
 composer install
@@ -197,7 +197,7 @@ MIT License - Silakan digunakan untuk keperluan pribadi atau komersial.
 
 ## 👤 Author
 
-Developed by [Your Name]
+Developed by [Delpiero]
 
 ---
 
