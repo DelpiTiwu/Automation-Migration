@@ -1,0 +1,31 @@
+# --- KONFIGURASI UMUM ---
+HEADLESS_MODE = True  # Set True agar browser tidak muncul (lebih cepat)
+MAX_WORKERS_DOWNLOAD = 3  # Jumlah download gambar bersamaan
+
+# --- KONFIGURASI SCRAPER ---
+SCRAPE_START_PAGE = 1
+SCRAPE_PAGES_TO_SCRAPE = 1
+BASE_URL_TEMPLATE = "https://balimall.id/search?keywords=&category2%5B79%5D=45&page={}"
+SCRAPED_PRODUCTS_CACHE = [] # To store products already processed and avoid duplicates
+# --- KONFIGURASI UPLOAD ---
+EMAIL_LOGIN = "YOUR_EMAIL@example.com"
+PASS_LOGIN  = "YOUR_PASSWORD"
+
+TARGET_KATEGORI    = "Perangkat Lunak" 
+TARGET_SUBKATEGORI = "Perangkat Lunak1"
+
+DEFAULT_BERAT   = "0"        
+DEFAULT_SATUAN  = "unit"        
+DEFAULT_PANJANG = "0"
+DEFAULT_LEBAR   = "0"
+DEFAULT_TINGGI  = "0"
+PREFIX_SKU      = "ATK-AUTO-" 
+
+# --- KONFIGURASI TIMING UPLOAD STOK ---
+# Naikkan nilai ini jika web admin lemot
+SLEEP_AFTER_SEARCH = 8     # Waktu tunggu setelah search produk (detik)
+SLEEP_AFTER_APPLY = 5      # Waktu tunggu setelah klik Apply (detik)
+SLEEP_AFTER_SAVE = 3       # Waktu tunggu setelah Save transaksi (detik)
+SLEEP_PAGE_LOAD = 10        # Waktu tunggu load halaman (detik)
+SLEEP_MODAL_OPEN = 10      # Waktu tunggu modal terbuka (detik)
+SLEEP_ALERT_CLEAR = 5     # Waktu tunggu setelah dismiss alert (detik)
